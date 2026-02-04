@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 
 
+# pas pratique d'utiliser pyspark pour load_data.csv, on utilise pandas parceque petit dataset...
+# generalement on utilise pyspark pour les tres gros datasets, pas besoin de la puissance de pyspark ici.
+
 df = pd.read_csv('loan_data.csv')
 #print(df.head())
 
